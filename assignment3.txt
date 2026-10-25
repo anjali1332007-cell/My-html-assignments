@@ -1,0 +1,32 @@
+# Terminal Navigation Practice Sheet
+
+## 1. Print Current Directory
+Command: `pwd`
+Purpose: Displays the current working directory.
+
+## 2. List Files and Folders
+Command: `ls`
+Purpose: Lists files and folders in the current directory.
+
+## 3. Change Directory
+Command: `cd foldername`
+Purpose: Moves into the specified folder.
+
+## 4. Move One Folder Back
+Command: `cd ..`
+Purpose: Moves to the parent directory.
+
+## 5. Clear the Terminal
+Command: `clear`
+Purpose: Clears the terminal screen.
+
+## 6. Check Node.js Version
+Command: `node -v`
+Purpose: Displays the installed Node.js version.
+
+## 7. Check Git Version
+Command: `git --version`
+Purpose: Displays the installed Git version.
+
+## Conclusion
+These commands help us navigate folders, view files, and check installed development tools using the terminal.
