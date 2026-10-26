@@ -1,0 +1,101 @@
+```css
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #263849;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #dce4ec;
+}
+
+/* Photo Gallery using CSS Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Photo Card */
+.photo {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.photo h3 {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263849;
+    color: white;
+}
+
+/* Tablet Screen */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px;
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .photo img {
+        height: 230px;
+    }
+}
+```

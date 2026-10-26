@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7fc;
+    color: #29263d;
+    line-height: 1.6;
+}
+
+header {
+    background: #5145a8;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 430px;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #eeeaff;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: #5145a8;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #5145a8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #382e83;
+}
+
+.decoration {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.decoration-one {
+    width: 220px;
+    height: 220px;
+    background: #d4ccff;
+    top: -70px;
+    left: -60px;
+}
+
+.decoration-two {
+    width: 180px;
+    height: 180px;
+    background: #c5baff;
+    bottom: -60px;
+    right: -40px;
+}
+
+.about {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #5145a8;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 380px;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .decoration-one {
+        width: 140px;
+        height: 140px;
+    }
+
+    .decoration-two {
+        width: 120px;
+        height: 120px;
+    }
+}

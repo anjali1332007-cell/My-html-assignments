@@ -1,0 +1,190 @@
+```css
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #25283d;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #282b46;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #d9daea;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Responsive Grid */
+.product-grid {
+    display: grid;
+
+    /* Automatically adjusts the number of columns */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #707386;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* Price and Button */
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.price {
+    color: #5145d9;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    background-color: #5145d9;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3930a6;
+}
+
+/* Footer */
+footer {
+    background-color: #282b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Small screens */
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 25px 12px;
+    }
+
+    .product-grid {
+        gap: 18px;
+    }
+}
+```
+```css
+/* Breakpoint 1: Tablets */
+@media (max-width: 900px) {
+    .header {
+        padding: 18px 4%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* Breakpoint 2: Mobile Phones */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .product-card img {
+        height: 230px;
+    }
+}
+```

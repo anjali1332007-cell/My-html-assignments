@@ -1,0 +1,4 @@
+
+Design Choices – Multi-Page Website
+
+I used a purple colour palette to give the website a modern and consistent appearance. Arial was selected for readability. I used navigation links to connect all four pages and added forms for registration and contact. CSS variables help maintain consistent colours, while spacing, rounded corners and responsive styling improve the user experience on different screen sizes.
